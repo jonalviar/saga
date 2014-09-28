@@ -394,7 +394,7 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-      local: {
+      release: {
         options: {
           remote: 'git@github.com:jonalviar/saga.git',
           branch: 'release'
