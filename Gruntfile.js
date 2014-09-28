@@ -396,7 +396,7 @@ module.exports = function (grunt) {
       },
       local: {
         options: {
-          remote: '../',
+          remote: 'git@github.com:jonalviar/saga.git',
           branch: 'release'
         }
       }
