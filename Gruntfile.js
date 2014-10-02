@@ -136,14 +136,14 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-                '.tmp',
-                '<%= yeoman.dist %>/*',
-                '!<%= yeoman.dist %>/.git*',
-                '!<%= yeoman.dist %>/Procfile',
-                '!<%= yeoman.dist %>/package.json',
-                '!<%= yeoman.dist %>/web.js',
-                '!<%= yeoman.dist %>/node_modules'
-           ]
+            '.tmp',
+            '<%= yeoman.dist %>/*',
+            '!<%= yeoman.dist %>/.git*',
+            '!<%= yeoman.dist %>/Procfile',
+            '!<%= yeoman.dist %>/package.json',
+            '!<%= yeoman.dist %>/web.js',
+            '!<%= yeoman.dist %>/node_modules'
+          ]
         }]
       },
       server: '.tmp'
@@ -398,10 +398,10 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-      release: {
+      heroku: {
         options: {
-          remote: 'git@github.com:jonalviar/saga.git',
-          branch: 'release'
+          remote: 'git@heroku.com:agile-sea-3278.git',
+          branch: 'master'
         }
       }
     }
@@ -452,6 +452,8 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
+
+  grunt.registerTask('deploy', ['buildcontrol']);
 
   grunt.registerTask('default', [
     'newer:jshint',
