@@ -24,10 +24,15 @@ angular
         controller: 'MainCtrl',
         activetab: 'home'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        activetab: 'about'
+      .when('/bridal-party', {
+        templateUrl: 'views/bridal-party.html',
+        controller: 'bridalPartyCtrl',
+        activetab: 'bridal-party'
+      })
+      .when('/location', {
+        templateUrl: 'views/location.html',
+        controller: 'locationCtrl',
+        activetab: 'location'
       })
       .otherwise({
         redirectTo: '/'
