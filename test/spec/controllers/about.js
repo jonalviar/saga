@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: locationCtrl', function () {
 
   // load the controller's module
   beforeEach(module('sagaApp'));
 
-  var AboutCtrl,
+  var locationCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    locationCtrl = $controller('locationCtrl', {
       $scope: scope
     });
   }));
